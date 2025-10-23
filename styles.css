@@ -1,0 +1,238 @@
+:root {
+    --bg: #0b0b0b;
+    --surface: #111;
+    --text: #f5f5f5;
+    --muted: #bcbcbc;
+    --accent: #5bc0ff;
+    --outline: rgba(255, 255, 255, 0.08);
+    --max: 1100px;
+    --radius: 16px;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Manrope", system-ui, sans-serif;
+    line-height: 1.6;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+/* NAVIGATION */
+.nav {
+    position: sticky;
+    top: 0;
+    background: rgba(15, 15, 15, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--outline);
+    z-index: 10;
+}
+.nav-inner {
+    max-width: var(--max);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+}
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 800;
+    letter-spacing: 0.4px;
+}
+.brand img {
+    width: 28px;
+    height: 28px;
+    background: #222;
+    border-radius: 6px;
+    object-fit: cover;
+}
+.menu {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.cta {
+    padding: 8px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--outline);
+}
+.cta--accent {
+    border: none;
+    background: var(--accent);
+    color: #000;
+    font-weight: 700;
+}
+
+/* HERO */
+header.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 80px 20px;
+    min-height: 80vh;
+}
+header.hero h1 {
+    font-size: clamp(32px, 8vw, 64px);
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 0;
+    max-width: 800px;
+}
+header.hero .accent {
+    color: var(--accent);
+}
+header.hero p {
+    color: var(--muted);
+    margin: 18px auto 28px;
+    max-width: 70ch;
+    font-size: clamp(14px, 2.8vw, 18px);
+}
+
+/* SECTIONS */
+section {
+    padding: 70px 20px;
+}
+.container {
+    max-width: var(--max);
+    margin: 0 auto;
+}
+h2 {
+    font-size: clamp(24px, 5vw, 36px);
+    margin-bottom: 12px;
+}
+.lead {
+    color: var(--muted);
+    margin-bottom: 20px;
+    font-size: clamp(14px, 2.8vw, 17px);
+}
+
+/* GRID CARDS */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+}
+.card {
+    border: 1px solid var(--outline);
+    border-radius: var(--radius);
+    background: var(--surface);
+    padding: 20px;
+    transition: transform 0.2s ease;
+}
+.card:hover {
+    transform: translateY(-4px);
+}
+.card h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+/* SEMINAR */
+.seminar {
+    border: 1px solid var(--accent);
+    border-radius: var(--radius);
+    background: #0f0f0f;
+    padding: 20px;
+    margin-top: 24px;
+}
+.seminar h3 {
+    color: var(--accent);
+    margin-top: 0;
+    font-size: 1.1rem;
+}
+.seminar time {
+    display: block;
+    color: var(--muted);
+    margin-top: 4px;
+    font-size: 0.9rem;
+}
+/* Inavtive Seminar */
+.seminar.inactive {
+    border: 1px solid var(--outline);
+    background: #0a0a0a;
+    color: var(--muted);
+    opacity: 0.55;
+    border-radius: var(--radius);
+    padding: 20px;
+    position: relative;
+    pointer-events: none;
+}
+
+.seminar.inactive h3 {
+    color: var(--muted);
+    text-decoration: line-through;
+    margin-top: 0;
+    font-size: 1.1rem;
+}
+
+.seminar.inactive::after {
+    content: "종료됨";
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    background: var(--outline);
+    color: var(--muted);
+    font-size: 0.75rem;
+    padding: 4px 8px;
+    border-radius: 8px;
+    letter-spacing: 0.5px;
+}
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 1px solid var(--outline);
+    color: var(--muted);
+}
+footer img {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background: #222;
+    margin-bottom: 8px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .nav-inner {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    header.hero {
+        padding: 60px 16px;
+    }
+}
+
+.timeline {
+    position: relative;
+    margin-left: 20px;
+    border-left: 2px solid var(--accent);
+    padding-left: 20px;
+}
+.event {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.event h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: var(--accent);
+}
+.event p {
+    margin: 4px 0 0;
+    color: var(--muted);
+}
