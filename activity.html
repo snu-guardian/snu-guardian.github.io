@@ -1,69 +1,70 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Guardian — 활동 내역</title>
     <meta name="description" content="Guardian (가디언) — 서울대학교 보안 연구 동아리 활동 내역." />
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&display=swap"
-        rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
-</head>
-<script>
+  </head>
+  <script>
     fetch("navbar.html")
-        .then((res) => res.text())
-        .then(
-            (html) =>
-            (document.getElementById("navbar-placeholder").innerHTML =
-                html)
-        )
-        .catch((err) => console.error("Navbar load error:", err));
-</script>
+      .then((res) => res.text())
+      .then((html) => (document.getElementById("navbar-placeholder").innerHTML = html))
+      .catch((err) => console.error("Navbar load error:", err))
+    fetch("footer.html")
+      .then((res) => res.text())
+      .then((html) => (document.getElementById("footer-placeholder").innerHTML = html))
+      .catch((err) => console.error("Footer load error:", err))
+  </script>
 
-<body>
+  <body>
     <div id="navbar-placeholder"></div>
     <header class="hero">
-        <h1>Guardian 활동 내역</h1>
-        <p>1999년 창립 이래 지금까지의 연구, 세미나, 대회 참여 기록.</p>
+      <h1>Guardian 활동 내역</h1>
+      <p>1999년 창립 이래 지금까지의 연구, 세미나, 대회 참여 기록.</p>
     </header>
 
     <section>
-        <div class="container">
-            <h2>최근 활동</h2>
-            <div class="timeline">
-                <div class="event">
-                    <h3>2025년</h3>
-                    <p>System, Web seminar</p>
-                    <p>2025 HSPACE 동아리 리그전 본선 참여</p>
-                    <p>Sunshine CTF 참가</p>
-                </div>
-            </div>
+      <div class="container">
+        <h2>최근 활동</h2>
+        <div class="timeline">
+          <div class="event">
+            <h3>2025년</h3>
+            <p>System, Web seminar</p>
+            <p>2025 HSPACE 동아리 리그전 본선 참여</p>
+            <p>Sunshine CTF 참가</p>
+          </div>
         </div>
+      </div>
     </section>
 
     <section>
-        <div class="container">
-            <h2>주요 연혁</h2>
-            <div class="timeline">
-                <div class="event">
-                    <h3>2013년</h3>
-                    <p>PlaidCTF 17위</p>
-                    <p>DEFCON 예선 17위</p>
-                    <p>DEFCON 본선 8위</p>
-                </div>
-                <div class="event">
-                    <h3>1999년</h3>
-                    <p>서울대학교 보안 연구 동아리 Guardian 창립.</p>
-                </div>
-            </div>
+      <div class="container">
+        <h2>주요 연혁</h2>
+        <div class="timeline">
+          <div class="event">
+            <h3>2018년</h3>
+            <p>GuardianCTF 주최</p>
+          </div>
+          <div class="event">
+            <h3>2013년</h3>
+            <p>PlaidCTF 17위</p>
+            <p>DEFCON 예선 17위</p>
+            <p>DEFCON 본선 8위</p>
+          </div>
+          <div class="event">
+            <h3>1999년</h3>
+            <p>서울대학교 보안 연구 동아리 Guardian 창립.</p>
+          </div>
         </div>
+      </div>
     </section>
 
-    <footer>
-        <img src="logo-placeholder.png" alt="Guardian 로고" />
-        <div>© 2025 Guardian — 서울대학교</div>
-    </footer>
-</body>
-
+    <div id="footer-placeholder"></div>
+  </body>
 </html>

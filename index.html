@@ -1,227 +1,184 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Guardian — 서울대학교 컴퓨터보안동아리</title>
-        <meta
-            name="description"
-            content="Guardian (가디언) — 서울대학교 컴퓨터공학부 보안 동아리. 공격과 방어, 연구와 교육, 그리고 CTF."
-        />
-        <meta
-            property="og:title"
-            content="Guardian — 서울대학교 컴퓨터보안동아리"
-        />
-        <meta name="theme-color" content="#0a0a0a" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="styles.css" />
-    </head>
-    <script>
-        fetch("navbar.html")
-            .then((res) => res.text())
-            .then(
-                (html) =>
-                    (document.getElementById("navbar-placeholder").innerHTML =
-                        html)
-            )
-            .catch((err) => console.error("Navbar load error:", err));
-        fetch("footer.html")
-            .then((res) => res.text())
-            .then(
-                (html) =>
-                    (document.getElementById("footer-placeholder").innerHTML =
-                        html)
-            )
-            .catch((err) => console.error("Footer load error:", err));
-    </script>
-    <body>
-        <div id="navbar-placeholder"></div>
-        <header id="top" class="hero">
-            <h1>서울대학교 보안동아리 <span class="accent">Guardian</span></h1>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Guardian — 서울대학교 컴퓨터보안동아리</title>
+    <meta
+      name="description"
+      content="Guardian (가디언) — 서울대학교 컴퓨터공학부 보안 동아리. 공격과 방어, 연구와 교육, 그리고 CTF."
+    />
+    <meta property="og:title" content="Guardian — 서울대학교 컴퓨터보안동아리" />
+    <meta name="theme-color" content="#0a0a0a" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <script>
+    fetch("navbar.html")
+      .then((res) => res.text())
+      .then((html) => (document.getElementById("navbar-placeholder").innerHTML = html))
+      .catch((err) => console.error("Navbar load error:", err))
+    fetch("footer.html")
+      .then((res) => res.text())
+      .then((html) => (document.getElementById("footer-placeholder").innerHTML = html))
+      .catch((err) => console.error("Footer load error:", err))
+  </script>
+
+  <body>
+    <div id="navbar-placeholder"></div>
+    <header id="top" class="hero">
+      <h1>
+        서울대학교 보안연구동아리
+        <span class="accent">Guardian</span>
+      </h1>
+      <p>Guardian은 서울대학교의 유일한 컴퓨터 보안 동아리입니다.</p>
+      <a href="#join" class="cta cta--accent">가입하기</a>
+    </header>
+
+    <section id="about">
+      <div class="container">
+        <h2>동아리 소개</h2>
+        <p class="lead">
+          가디언은 1999년 4월 30일에 창립된 서울대학교 보안 연구 동아리입니다. 실습서버를 대상으로
+          한 보안 취약점 공부와 함께 누구나 보안을 배울 수 있도록 기초 교육을 제공합니다.
+        </p>
+        <div class="grid">
+          <div class="card">
+            <h3>무엇을 하나요?</h3>
             <p>
-                서울대학교 유일 보안 동아리 Guardian은 서울대학교의 보안 연구
-                공동체로서 실전 중심 학습과 CTF를 통해 보안을 공부합니다.
+              시스템·웹·네트워크·모바일 등 다양한 분야의 취약점을 찾고, 공격·방어 기법을 연구합니다.
+              보안에 처음 입문하는 학생들을 위한 기초 세미나와 워크숍도 정기적으로 개최합니다.
             </p>
-            <a href="#join" class="cta cta--accent">가입하기</a>
-        </header>
+          </div>
+          <div class="card">
+            <h3>누가 가입하나요?</h3>
+            <p>
+              보안에 관심과 열정이 있는 서울대학교 학부 및 대학원 분들
+              <br />
+              CTF 참여 경험이 적은 초보자도 환영하며, 적극적으로 참여해주시는 모든 분들을
+              기다립니다.
+            </p>
+          </div>
+          <div class="card">
+            <h3>어디에서 활동하나요?</h3>
+            <p>
+              <b>302동 314호</b>
+              컴퓨터공학부 과방 안에 동방이 위치해 있습니다. 동아리 가입시, 행정실을 통해 등록하면
+              자유롭게 사용하실 수 있습니다.
+              <br />
+              이 외의 궁금한 점은
+              <a href="mailto:snucsguard@gmail.com" style="color: var(--accent)">
+                snucsguard@gmail.com
+              </a>
+              으로 메일주시기 바랍니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section id="about">
-            <div class="container">
-                <h2>동아리 소개</h2>
-                <p class="lead">
-                    가디언은 1999년 4월 30일에 창립된 서울대학교 보안 연구
-                    동아리입니다. 실습서버를 대상으로 한 보안 취약점 공부와 함께
-                    누구나 보안을 배울 수 있도록 기초 교육을 제공합니다.
-                </p>
-                <div class="grid">
-                    <div class="card">
-                        <h3>무엇을 하나요?</h3>
-                        <p>
-                            시스템·웹·네트워크·모바일 등 다양한 분야에서
-                            취약점을 찾고, 공격·방어 기법을 연구합니다. 기초부터
-                            실전까지 단계별로 학습합니다.
-                        </p>
-                    </div>
-                    <div class="card">
-                        <h3>누가 가입하나요?</h3>
-                        <p>
-                            보안에 관심과 열정이 있는 서울대학교 학부 및 대학원
-                            분들 <br />
-                            CTF 참여 경험이 적은 초보자도 환영하며, 적극적으로 참여해주시는 모든 분들을 기다립니다.
-                        </p>
-                    </div>
-                    <div class="card">
-                        <h3>어디에서 활동하나요?</h3>
-                        <p>
-                            <b>302동 314호</b> 컴퓨터공학부 과방 안에 동방이 위치해
-                            있습니다. 동아리 가입시, 행정실을 통해 등록하면
-                            자유롭게 사용하실 수 있습니다.<br />
-                            이 외의 궁금한 점은
-                            <a
-                                href="mailto:snucsguard@gmail.com"
-                                style="color: var(--accent)"
-                                >snucsguard@gmail.com</a
-                            >으로 메일주시기 바랍니다.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <section id="tracks">
+      <div class="container">
+        <h2>활동 분야</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>CTF</h3>
+            <p>비정기적으로 CTF 대회에 참가하며 끝나고는 다같이 모여 친목을 다집니다.</p>
+          </div>
+          <div class="card">
+            <h3>보안 기법 분석</h3>
+            <p>개강 총회를 통해서 부원들이 탐구하고 연구한 보안 기법들을 공유합니다.</p>
+          </div>
+          <div class="card">
+            <h3>연구</h3>
+            <p>시스템 보안, 암호학, 프라이버시, ML 보안 등 최신 논문 및 프로젝트를 진행합니다</p>
+          </div>
+          <div class="card">
+            <h3>교육</h3>
+            <p>정기 세미나, 워크숍, 입문자 대상 실습 중심 교육 프로그램이 운영됩니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section id="tracks">
-            <div class="container">
-                <h2>활동 분야</h2>
-                <div class="grid">
-                    <div class="card">
-                        <h3>공격 보안</h3>
-                        <p>
-                            바이너리 익스플로잇, 리버싱, 웹 취약점 분석 등 실제
-                            공격 기법 학습.
-                        </p>
-                    </div>
-                    <div class="card">
-                        <h3>방어 보안</h3>
-                        <p>포렌식 학습 및 실습.</p>
-                    </div>
-                    <div class="card">
-                        <h3>연구</h3>
-                        <p>
-                            시스템 보안, 암호학, 프라이버시, ML 보안 등 최신
-                            논문 및 프로젝트 연구.
-                        </p>
-                    </div>
-                    <div class="card">
-                        <h3>교육</h3>
-                        <p>
-                            정기 세미나, 워크숍, 입문자 대상 실습 중심 교육
-                            프로그램 운영.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <section id="projects">
+      <div class="container">
+        <h2>프로젝트</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>스터디</h3>
+            <p>How2heap 스터디, kernel 스터디 등 다양한 주제의 스터디를 자율적으로 진행</p>
+          </div>
+          <div class="card">
+            <h3>Guardian CTF</h3>
+            <p>가디언 내에서 제작한 워게임 문항들. 직접 문항 제작 및 운영 참여 가능.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section id="projects">
-            <div class="container">
-                <h2>프로젝트</h2>
-                <div class="grid">
-                    <div class="card">
-                        <h3>스터디</h3>
-                        <p>
-                            How2heap 스터디, kernel 스터디 등 다양한 주제의
-                            스터디를 자율적으로 진행
-                        </p>
-                    </div>
-                    <div class="card">
-                        <h3>Guardian CTF</h3>
-                        <p>
-                            가디언 내에서 제작한 워게임 문항들. 직접 문항 제작
-                            및 운영 참여 가능.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <section id="seminar">
+      <div class="container">
+        <h2>진행 중인 세미나</h2>
+        <p class="lead">현재 학기 진행 중인 세미나 일정과 주제입니다.</p>
+        <div class="seminar">
+          <h3>컴퓨팅 기초 세미나</h3>
+          <time>@TBD</time>
+          <p>보안에 입문하기 전 컴퓨터에 대해서 다루는 세미나입니다.</p>
+        </div>
+        <div class="seminar inactive">
+          <h3>시스템 취약점 분석 세미나</h3>
+          <time>Next Semester...</time>
+          <p>basic shell code부터 heap exploit, fsop 등 고급 기법까지 다루는 시스템 세미나.</p>
+        </div>
+        <div class="seminar inactive">
+          <h3>웹 해킹 심화 세션</h3>
+          <time>Next Semester...</time>
+          <p>CTF 문제 기반으로 SSRF, XSS 등 취약점 분석.</p>
+        </div>
+        <div class="seminar inactive">
+          <h3>암호학 세미나</h3>
+          <time>Next Semester...</time>
+          <p>대칭키, 공개키 암호부터 최신 암호 프로토콜과 응용까지 폭넓게 다루는 암호학 세미나.</p>
+        </div>
+        <div class="seminar inactive">
+          <h3>리버싱 세미나</h3>
+          <time>Next Semester...</time>
+          <p>IDA Pro, Ghidra를 활용한 리버싱 입문 및 실습 진행.</p>
+        </div>
+      </div>
+    </section>
 
-        <section id="seminar">
-            <div class="container">
-                <h2>진행 중인 세미나</h2>
-                <p class="lead">
-                    현재 학기 진행 중인 세미나 일정과 주제입니다.
-                </p>
-                <div class="seminar">
-                    <h3>시스템 취약점 분석 세미나</h3>
-                    <time
-                        >매주 수요일 18:00-20:00, 금요일 15:00-17:00 @ TBD</time
-                    >
-                    <p>
-                        basic shell code부터 heap exploit, fsop 등 고급 기법까지
-                        다루는 시스템 세미나.
-                    </p>
-                </div>
-                <div class="seminar">
-                    <h3>웹 해킹 심화 세션</h3>
-                    <time>매주 금요일 18:00-20:00 @ TBD</time>
-                    <p>CTF 문제 기반으로 SSRF, XSS 등 취약점 분석.</p>
-                </div>
-                <div class="seminar inactive">
-                    <h3>암호학 세미나</h3>
-                    <time>Next Semester...</time>
-                    <p>
-                        대칭키, 공개키 암호부터 최신 암호 프로토콜과 응용까지
-                        폭넓게 다루는 암호학 세미나.
-                    </p>
-                </div>
-                <div class="seminar inactive">
-                    <h3>리버싱 세미나</h3>
-                    <time>Next Semester...</time>
-                    <p>IDA Pro, Ghidra를 활용한 리버싱 입문 및 실습 진행.</p>
-                </div>
-            </div>
-        </section>
+    <section id="join">
+      <div class="container">
+        <h2>가입 안내</h2>
+        <p class="lead">보안에 대한 열정과 꾸준함이 있다면 누구나 환영합니다.</p>
+        <ul style="color: var(--muted)">
+          <li>매년 3월 정기 모집을 하며, 9월에도 비정기적으로 모집합니다.</li>
+        </ul>
+        <p style="margin-top: 14px; color: var(--muted)">
+          정기 세미나 및 프로젝트 진행은 학기 중 주 1-2회, 장소는 공대 301동 내에서 이루어집니다.
+        </p>
+      </div>
+    </section>
 
-        <section id="join">
-            <div class="container">
-                <h2>가입 안내</h2>
-                <p class="lead">
-                    보안에 대한 열정과 꾸준함이 있다면 누구나 환영합니다.
-                </p>
-                <ul style="color: var(--muted)">
-                    <li>
-                        매년 3월 정기 모집을 하며, 9월에도 비정기적으로
-                        모집합니다.
-                    </li>
-                    <li>
-                        추가 신청의 경우 이메일을 통해 참여 의사 / 경험 / 학습
-                        목표 등을 제출
-                    </li>
-                </ul>
-                <p style="margin-top: 14px; color: var(--muted)">
-                    정기 세미나 및 프로젝트 진행은 학기 중 주 1-2회, 장소는 공대
-                    301동 내 예정.
-                </p>
-            </div>
-        </section>
+    <section id="contact">
+      <div class="container">
+        <h2>문의</h2>
+        <p class="lead">가입, 기타 문의는 아래로 연락해주세요.</p>
+        <p>
+          <a href="mailto:snucsguard@gmail.com" style="color: var(--accent)">
+            snucsguard@gmail.com
+          </a>
+        </p>
+      </div>
+    </section>
 
-        <section id="contact">
-            <div class="container">
-                <h2>문의</h2>
-                <p class="lead">가입, 기타 문의는 아래로 연락해주세요.</p>
-                <p>
-                    <a
-                        href="mailto:snucsguard@gmail.com"
-                        style="color: var(--accent)"
-                        >snucsguard@gmail.com</a
-                    >
-                </p>
-            </div>
-        </section>
-
-        <div id="footer-placeholder"></div>
-    </body>
+    <div id="footer-placeholder"></div>
+  </body>
 </html>
