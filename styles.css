@@ -55,7 +55,14 @@ a {
 }
 .menu {
   display: flex;
-  gap: 20px;
+  gap: 22px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.menu-group,
+.menu-actions {
+  display: flex;
+  gap: 16px;
   align-items: center;
 }
 .cta {
