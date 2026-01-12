@@ -11,16 +11,6 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <script>
-    fetch("navbar.html")
-      .then((res) => res.text())
-      .then((html) => (document.getElementById("navbar-placeholder").innerHTML = html))
-      .catch((err) => console.error("Navbar load error:", err))
-    fetch("footer.html")
-      .then((res) => res.text())
-      .then((html) => (document.getElementById("footer-placeholder").innerHTML = html))
-      .catch((err) => console.error("Footer load error:", err))
-  </script>
 
   <body>
     <div id="navbar-placeholder"></div>
@@ -66,5 +56,6 @@
     </section>
 
     <div id="footer-placeholder"></div>
+    <script src="site.js"></script>
   </body>
 </html>

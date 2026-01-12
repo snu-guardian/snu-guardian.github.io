@@ -18,16 +18,6 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <script>
-    fetch("navbar.html")
-      .then((res) => res.text())
-      .then((html) => (document.getElementById("navbar-placeholder").innerHTML = html))
-      .catch((err) => console.error("Navbar load error:", err))
-    fetch("footer.html")
-      .then((res) => res.text())
-      .then((html) => (document.getElementById("footer-placeholder").innerHTML = html))
-      .catch((err) => console.error("Footer load error:", err))
-  </script>
 
   <body>
     <div id="navbar-placeholder"></div>
@@ -126,31 +116,7 @@
       <div class="container">
         <h2>진행 중인 세미나</h2>
         <p class="lead">현재 학기 진행 중인 세미나 일정과 주제입니다.</p>
-        <div class="seminar">
-          <h3>컴퓨팅 기초 세미나</h3>
-          <time>@TBD</time>
-          <p>보안에 입문하기 전 컴퓨터에 대해서 다루는 세미나입니다.</p>
-        </div>
-        <div class="seminar inactive">
-          <h3>시스템 취약점 분석 세미나</h3>
-          <time>Next Semester...</time>
-          <p>basic shell code부터 heap exploit, fsop 등 고급 기법까지 다루는 시스템 세미나.</p>
-        </div>
-        <div class="seminar inactive">
-          <h3>웹 해킹 심화 세션</h3>
-          <time>Next Semester...</time>
-          <p>CTF 문제 기반으로 SSRF, XSS 등 취약점 분석.</p>
-        </div>
-        <div class="seminar inactive">
-          <h3>암호학 세미나</h3>
-          <time>Next Semester...</time>
-          <p>대칭키, 공개키 암호부터 최신 암호 프로토콜과 응용까지 폭넓게 다루는 암호학 세미나.</p>
-        </div>
-        <div class="seminar inactive">
-          <h3>리버싱 세미나</h3>
-          <time>Next Semester...</time>
-          <p>IDA Pro, Ghidra를 활용한 리버싱 입문 및 실습 진행.</p>
-        </div>
+        <div id="seminar-list"></div>
       </div>
     </section>
 
@@ -180,5 +146,6 @@
     </section>
 
     <div id="footer-placeholder"></div>
+    <script src="site.js"></script>
   </body>
 </html>

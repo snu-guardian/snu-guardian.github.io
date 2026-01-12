@@ -1,0 +1,40 @@
+{
+  "seminars": [
+    {
+      "title": "컴퓨팅 기초 세미나",
+      "time": "@TBD",
+      "description": "보안에 입문하기 전 컴퓨터에 대해서 다루는 세미나입니다.",
+      "active": true
+    },
+    {
+      "title": "Windows Internals 세미나",
+      "time": "@TBD",
+      "description": "Windows 운영체제의 내부 구조와 동작 원리를 심도 있게 다루는 세미나입니다. Windows Internals 7-th Edition을 기반으로 진행됩니다.",
+      "active": true
+    },
+    {
+      "title": "시스템 취약점 분석 세미나",
+      "time": "Next Semester...",
+      "description": "basic shell code부터 heap exploit, fsop 등 고급 기법까지 다루는 시스템 세미나.",
+      "active": false
+    },
+    {
+      "title": "웹 해킹 심화 세션",
+      "time": "Next Semester...",
+      "description": "CTF 문제 기반으로 SSRF, XSS 등 취약점 분석.",
+      "active": false
+    },
+    {
+      "title": "암호학 세미나",
+      "time": "Next Semester...",
+      "description": "대칭키, 공개키 암호부터 최신 암호 프로토콜과 응용까지 폭넓게 다루는 암호학 세미나.",
+      "active": false
+    },
+    {
+      "title": "리버싱 세미나",
+      "time": "Next Semester...",
+      "description": "IDA Pro, Ghidra를 활용한 리버싱 입문 및 실습 진행.",
+      "active": false
+    }
+  ]
+}
