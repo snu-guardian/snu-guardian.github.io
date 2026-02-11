@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
   <head>
     <meta charset="utf-8" />
@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -62,9 +62,7 @@
               자유롭게 사용하실 수 있습니다.
               <br />
               이 외의 궁금한 점은
-              <a href="mailto:snucsguard@gmail.com" style="color: var(--accent)">
-                snucsguard@gmail.com
-              </a>
+              <a href="mailto:snucsguard@gmail.com" class="link-accent">snucsguard@gmail.com</a>
               으로 메일주시기 바랍니다.
             </p>
           </div>
@@ -77,36 +75,39 @@
         <h2>활동 분야</h2>
         <div class="grid">
           <div class="card">
-            <h3>CTF</h3>
-            <p>비정기적으로 CTF 대회에 참가하며 끝나고는 다같이 모여 친목을 다집니다.</p>
+            <h3>개강/종강총회 🗓️</h3>
+            <p>
+              학기 중 2회 진행되며, 프로젝트·연구 결과와 인상 깊었던 문제 Writeup을 공유하는
+              자리이자 네트워킹을 위한 자리입니다.
+            </p>
           </div>
-          <div class="card">
-            <h3>보안 기법 분석</h3>
-            <p>개강 총회를 통해서 부원들이 탐구하고 연구한 보안 기법들을 공유합니다.</p>
-          </div>
-          <div class="card">
-            <h3>연구</h3>
-            <p>시스템 보안, 암호학, 프라이버시, ML 보안 등 최신 논문 및 프로젝트를 진행합니다</p>
-          </div>
-          <div class="card">
-            <h3>교육</h3>
-            <p>정기 세미나, 워크숍, 입문자 대상 실습 중심 교육 프로그램이 운영됩니다.</p>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section id="projects">
-      <div class="container">
-        <h2>프로젝트</h2>
-        <div class="grid">
           <div class="card">
-            <h3>스터디</h3>
-            <p>How2heap 스터디, kernel 스터디 등 다양한 주제의 스터디를 자율적으로 진행</p>
+            <h3>신입생 교육 및 스터디 📝</h3>
+            <p>
+              1학기에는 입문자를 위한 기초 세미나, 2학기에는 포너블·리버싱·웹·포렌식 등의 심화
+              세미나가 열립니다.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>대회 참여 🚩</h3>
+            <p>CTF 해킹 대회에 팀을 꾸려 참가하며, 주로 해외 대회에 도전합니다.</p>
+          </div>
+
+          <div class="card">
+            <h3>프로젝트 모임 👨‍💻</h3>
+            <p>
+              방학 중 프로젝트 활동을 지원해 경험을 쌓고, 결과물을 기록·포트폴리오로 남길 수 있도록
+              돕습니다.
+            </p>
           </div>
           <div class="card">
-            <h3>Guardian CTF</h3>
-            <p>가디언 내에서 제작한 워게임 문항들. 직접 문항 제작 및 운영 참여 가능.</p>
+            <h3>자율 소모임 🤝</h3>
+            <p>
+              원하는 주제로 자유롭게 소모임을 만들 수 있습니다. e.g. 맬웨어 분석, 디지털 포렌식,
+              블루팀 운영 등
+            </p>
           </div>
         </div>
       </div>
@@ -114,9 +115,42 @@
 
     <section id="seminar">
       <div class="container">
-        <h2>진행 중인 세미나</h2>
-        <p class="lead">현재 학기 진행 중인 세미나 일정과 주제입니다.</p>
+        <h2>26-1 세미나</h2>
+        <p class="lead">현재 학기의 세미나 일정과 주제입니다.</p>
         <div id="seminar-list"></div>
+      </div>
+    </section>
+
+    <section id="membership" class="membership">
+      <div class="container">
+        <h2>부원 구분 및 전환</h2>
+        <p class="lead">2026년부터 Guardian에서는 아래와 같은 부원 구분을 둡니다.</p>
+        <div class="grid membership-grid">
+          <div class="card">
+            <h3>신입부원</h3>
+            <p>새로 들어왔거나, 정회원 자격을 아직 충족하지 못한 자.</p>
+          </div>
+          <div class="card">
+            <h3>정규부원</h3>
+            <p>정회원 자격을 충족한 자.</p>
+          </div>
+          <div class="card">
+            <h3>OB</h3>
+            <p>정규부원이었던 자들 중 학부를 졸업한 자.</p>
+          </div>
+        </div>
+        <div class="membership-criteria">
+          <h3>정회원 전환 기준</h3>
+          <p>정회원 자격은 아래 항목 중 하나 이상 해당할시 얻을 수 있습니다.</p>
+          <ul class="criteria-list">
+            <li>세미나 2개 이상 참여(비대면 포함)한 자.</li>
+            <li>세미나 이후 열리는 내부 CTF(with writeup)에서 일정 성적 이상을 거둔 자.</li>
+            <li>CTF/총회에 모두 참여한 자.</li>
+          </ul>
+          <p class="criteria-note">
+            이때, "CTF 참여"란 mic check를 제외한 문항 풀이 성공을 의미합니다.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -124,10 +158,10 @@
       <div class="container">
         <h2>가입 안내</h2>
         <p class="lead">보안에 대한 열정과 꾸준함이 있다면 누구나 환영합니다.</p>
-        <ul style="color: var(--muted)">
+        <ul class="join-list">
           <li>매년 3월 정기 모집을 하며, 9월에도 비정기적으로 모집합니다.</li>
         </ul>
-        <p style="margin-top: 14px; color: var(--muted)">
+        <p class="join-note">
           정기 세미나 및 프로젝트 진행은 학기 중 주 1-2회, 장소는 공대 301동 내에서 이루어집니다.
         </p>
       </div>
@@ -138,9 +172,7 @@
         <h2>문의</h2>
         <p class="lead">가입, 기타 문의는 아래로 연락해주세요.</p>
         <p>
-          <a href="mailto:snucsguard@gmail.com" style="color: var(--accent)">
-            snucsguard@gmail.com
-          </a>
+          <a href="mailto:snucsguard@gmail.com" class="link-accent">snucsguard@gmail.com</a>
         </p>
       </div>
     </section>

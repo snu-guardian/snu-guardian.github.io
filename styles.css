@@ -15,7 +15,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font-family: "Manrope", system-ui, sans-serif;
+  font-family: "Noto Sans KR", "Manrope", system-ui, sans-serif;
   line-height: 1.6;
 }
 a {
@@ -141,6 +141,56 @@ h2 {
 .card h3 {
   margin-top: 0;
   font-size: 1.2rem;
+}
+
+/* MEMBERSHIP */
+.membership-grid {
+  margin-top: 16px;
+}
+.membership .card {
+  background: #0f0f0f;
+}
+.membership-criteria {
+  margin-top: 24px;
+  padding: 22px;
+  border: 1px solid var(--outline);
+  border-radius: var(--radius);
+  background: #0f0f0f;
+}
+.membership-criteria h3 {
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+  color: var(--accent);
+}
+.membership-criteria p {
+  margin: 8px 0;
+  color: var(--muted);
+}
+.criteria-list {
+  margin: 10px 0 0;
+  padding-left: 18px;
+  color: var(--muted);
+}
+.criteria-list li {
+  margin: 8px 0;
+}
+.criteria-note {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+/* JOIN */
+.join-list {
+  color: var(--muted);
+}
+.join-note {
+  margin-top: 14px;
+  color: var(--muted);
+}
+.link-accent {
+  color: var(--accent);
 }
 
 /* SEMINAR */
