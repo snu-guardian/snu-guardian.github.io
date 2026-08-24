@@ -1,39 +1,45 @@
 {
   "seminars": [
     {
+      "title": "시스템 취약점 분석 세미나",
+      "time": "TBD",
+      "description": "basic shell code부터 heap exploit, fsop 등을 다루는 시스템 세미나.",
+      "active": true
+    },
+    {
+      "title": "웹 보안 심화 세미나",
+      "time": "TBD",
+      "description": "CTF 문제 기반으로 SSRF, XSS 등 취약점을 분석하는 세미나.",
+      "active": true
+    },
+    {
       "title": "컴퓨터 기초 세미나",
-      "time": "TBD",
+      "time": "Next Semester...",
       "description": "보안에 입문하기 전 컴퓨터에 대해서 다루는 세미나. 기간: 4주.",
-      "active": true
-    },
-    {
-      "title": "웹 기초 세미나",
-      "time": "TBD",
-      "description": "웹 애플리케이션 구조와 웹해킹에 입문하기 위한 배경지식을 다루는 세미나. 기간: 3주.",
-      "active": true
-    },
-    {
-      "title": "암호학 기초 세미나",
-      "time": "TBD",
-      "description": "여러 컴퓨터 분야에서 다뤄지는 기초적인 암호와 잘 알려진 취약점을 다루는 세미나. 기간: 3주.",
-      "active": true
-    },
-    {
-      "title": "리버싱 기초 세미나",
-      "time": "TBD",
-      "description": "IDA Pro, Ghidra를 활용한 리버싱 입문 및 실습 진행 세미나. 기간: 3주.",
-      "active": true
-    },
-    {
-      "title": "Windows Internals 세미나",
-      "time": "@TBD",
-      "description": "Windows 운영체제의 내부 구조와 동작 원리를 심도 있게 다루는 세미나. Windows Internals 7-th Edition을 기반으로 진행.",
       "active": false
     },
     {
-      "title": "시스템 취약점 분석 세미나",
+      "title": "웹 기초 세미나",
       "time": "Next Semester...",
-      "description": "basic shell code부터 heap exploit, fsop 등을 다루는 시스템 세미나.",
+      "description": "웹 애플리케이션 구조와 웹해킹에 입문하기 위한 배경지식을 다루는 세미나. 기간: 3주.",
+      "active": false
+    },
+    {
+      "title": "암호학 기초 세미나",
+      "time": "Next Semester...",
+      "description": "여러 컴퓨터 분야에서 다뤄지는 기초적인 암호와 잘 알려진 취약점을 다루는 세미나. 기간: 3주.",
+      "active": false
+    },
+    {
+      "title": "리버싱 기초 세미나",
+      "time": "Next Semester...",
+      "description": "IDA Pro, Ghidra를 활용한 리버싱 입문 및 실습 진행 세미나. 기간: 3주.",
+      "active": false
+    },
+    {
+      "title": "Windows Internals 세미나",
+      "time": "Next Semester...",
+      "description": "Windows 운영체제의 내부 구조와 동작 원리를 심도 있게 다루는 세미나. Windows Internals 7-th Edition을 기반으로 진행.",
       "active": false
     }
   ]
